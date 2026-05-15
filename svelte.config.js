@@ -4,8 +4,8 @@ import vercel from "@sveltejs/adapter-vercel";
 const config = {
   kit: {
     adapter: vercel({
-      // force a Node 18 runtime on Vercel
-      runtime: "nodejs18.x",
+      // force a Node 20 runtime on Vercel
+      runtime: "nodejs20.x",
     }),
   },
 };
