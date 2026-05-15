@@ -26,28 +26,28 @@
         { name: 'Redis',             level: 70 }
       ]
     },
-    {
-      label: 'Tooling & DevOps',
-      icon: '🚀',
-      color: '#a78bfa',
-      skills: [
-        { name: 'Docker / K8s',  level: 75 },
-        { name: 'CI/CD (GH Actions)', level: 84 },
-        { name: 'Vite / Webpack', level: 88 },
-        { name: 'Testing (Vitest, Playwright)', level: 80 },
-        { name: 'Linux / Bash',  level: 76 }
-      ]
-    }
+    // {
+    //   label: 'Tooling & DevOps',
+    //   icon: '🚀',
+    //   color: '#a78bfa',
+    //   skills: [
+    //     { name: 'Docker / K8s',  level: 75 },
+    //     { name: 'CI/CD (GH Actions)', level: 84 },
+    //     { name: 'Vite / Webpack', level: 88 },
+    //     { name: 'Testing (Vitest, Playwright)', level: 80 },
+    //     { name: 'Linux / Bash',  level: 76 }
+    //   ]
+    // }
   ];
 
   const TOOLS = [
     { name: 'Svelte',      emoji: '🧡' },
     { name: 'TypeScript',  emoji: '🔷' },
     { name: 'React',       emoji: '⚛️' },
-    { name: 'Go',          emoji: '🐹' },
-    { name: 'Python',      emoji: '🐍' },
-    { name: 'Docker',      emoji: '🐳' },
-    { name: 'PostgreSQL',  emoji: '🐘' },
+    { name: 'Java',          emoji: '🐹' },
+    // { name: 'Python',      emoji: '🐍' },
+    // { name: 'Docker',      emoji: '🐳' },
+    // { name: 'PostgreSQL',  emoji: '🐘' },
     { name: 'Figma',       emoji: '🎨' },
     { name: 'Git',         emoji: '🌿' },
     { name: 'Vim',         emoji: '🟩' },
@@ -102,13 +102,13 @@
     </div>
 
     <!-- Skill groups -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
       {#each SKILL_GROUPS as group, gi}
         <div class="reveal" style="transition-delay: {gi * 0.1}s;">
           <div class="glass rounded-2xl border border-white/8 p-6 h-full hover:border-white/16 transition-colors duration-300">
             <!-- Group header -->
             <div class="flex items-center gap-3 mb-6">
-              <span class="text-2xl" aria-hidden="true">{group.icon}</span>
+              <!-- <span class="text-2xl" aria-hidden="true">{group.icon}</span> -->
               <h3 class="font-display font-semibold text-lg text-white">{group.label}</h3>
             </div>
 
@@ -152,7 +152,7 @@
                    hover:-translate-y-1 hover:shadow-lg cursor-none"
             style="animation: float {3 + (i % 4) * 0.5}s ease-in-out infinite; animation-delay: {i * 0.15}s;"
           >
-            <span class="text-lg" aria-hidden="true">{tool.emoji}</span>
+            <!-- <span class="text-lg" aria-hidden="true">{tool.emoji}</span> -->
             <span class="font-mono text-sm text-white/60 group-hover:text-white transition-colors">
               {tool.name}
             </span>

@@ -85,10 +85,10 @@
       <!-- Left: Contact info -->
       <div class="lg:col-span-2 space-y-6 reveal">
         {#each [
-          { icon: '✉', label: 'Email', value: 'you@example.com', href: 'mailto:you@example.com' },
-          { icon: '🐙', label: 'GitHub', value: 'github.com/yourusername', href: 'https://github.com/yourusername' },
-          { icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/yourname', href: 'https://linkedin.com' },
-          { icon: '🐦', label: 'Twitter', value: '@yourusername', href: 'https://twitter.com' }
+          {  label: 'Email', value: 'Temijeje@gmail.com', href: 'mailto:Temijeje@gmail.com' },
+          {  label: 'GitHub', value: 'Temijopelo', href: 'https://github.com/temijopelo' },
+          {  label: 'LinkedIn', value: 'Temijopelo Jeje', href: 'https://linkedin.com/temijopelo-jeje' },
+          {  label: 'Twitter', value: '@jopejeje', href: 'https://twitter.com' }
         ] as info}
           <a
             href={info.href}
@@ -97,7 +97,7 @@
             class="group flex items-center gap-4 p-4 rounded-xl glass border border-white/8
                    hover:border-gold-500/40 hover:bg-gold-500/5 transition-all duration-200 cursor-none"
           >
-            <span class="text-2xl w-10 text-center" aria-hidden="true">{info.icon}</span>
+           
             <div>
               <div class="font-mono text-xs text-white/30 uppercase tracking-widest mb-0.5">{info.label}</div>
               <div class="font-mono text-sm text-white/70 group-hover:text-gold-400 transition-colors">

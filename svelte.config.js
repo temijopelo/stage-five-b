@@ -1,10 +1,13 @@
-import adapter from '@sveltejs/adapter-auto';
+import vercel from "@sveltejs/adapter-vercel";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
-    adapter: adapter()
-  }
+    adapter: vercel({
+      // force a Node 18 runtime on Vercel
+      runtime: "nodejs18.x",
+    }),
+  },
 };
 
 export default config;
