@@ -23,5 +23,8 @@
     "gsap": "3.12.5",
     "primeicons": "^7.0.0"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "type": "module"
 }
